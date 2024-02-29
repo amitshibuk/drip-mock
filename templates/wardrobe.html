@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DRIP</title>
+    <link href="{{ url_for('static', filename='css/wardrobe.css') }}" rel="stylesheet" />
+</head>
+<body style="background-color:#b7e6b9;">
+
+    <div>
+        <div class="home-container">
+          <a href=Add_Product >
+            <button type="button" class="home-button Heading button" action = '/Add_Product' >+</button>
+          </a>
+
+          <a href=/ >
+            <button type="button" class="home-button3 Heading button" action = '/Add_Product' >M</button>
+          </a>
+
+          {% for tup in data %}
+              <div class="home-container1">
+                <span class="home-text">
+                  <span>{{ tup.type }}</span>
+                  <br />
+                  <br />
+                </span>
+                <h1 class="home-text4"> {{ tup.name }}</h1>
+                <img
+                  src= "{{'./static/images/'+ tup.image_link }}"
+                  alt="image"
+                  class="home-image"
+                />
+                <div class="home-color" style="background-color: {{ tup.color }};" ></div>
+              </div>
+          {% endfor %}
+        </div>
+      </div>
+      
+    
+</body>
+</html>

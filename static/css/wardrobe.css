@@ -1,0 +1,102 @@
+.home-container {
+    width: 100%;
+    display: flex;
+    overflow: auto;
+    min-height: 100vh;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .home-button {
+    color: #ffffff;
+    right: 45px;
+    width: 102px;
+    border-radius: 51px;
+    font-size: 50px;
+    z-index: 0;
+    bottom: 60px;
+    height: 102px;
+    position: fixed;
+    background-color: #43a047;
+  }
+
+  .home-button3 {
+    color: #ffffff;
+    right: 45px;
+    width: 102px;
+    border-radius: 51px;
+    font-size: 50px;
+    z-index: 0;
+    bottom: 140px;
+    height: 102px;
+    position: fixed;
+    background-color: #43a047;
+  }
+
+  .home-button:hover{
+    background-color: #427645;
+  }
+  .home-button3:hover{
+    background-color: #427645;
+  }
+
+
+  .home-container1 {
+    background-color:#ececec;
+    width: 965px;
+    max-height: 600px;
+    position: relative;
+    box-shadow: 5px 5px 10px 0px #43a047;
+    align-items: center;
+    padding-top: 35px;
+    border-color: var(--dl-color-gray-black);
+    border-width: 1px;
+    padding-left: 35px;
+    border-radius: 50px;
+    padding-right: 35px;
+    padding-bottom: 35px;
+    justify-content: center;
+    margin: 10px;
+  }
+  .home-text {
+    top: 161px;
+    left: 287px;
+    position: absolute;
+    font-size: 30px;
+  }
+  .home-text4 {
+    top: 63px;
+    left: 263px;
+    width: 1000px;
+    height: 72px;
+    position: absolute;
+    overflow: visible;
+    font-size: 50px;
+  }
+  .home-image {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+  }
+  .home-color {
+    top: 6px;
+    right: 5px;
+    width: 51px;
+    border: 2px dashed rgba(120, 120, 120, 0.4);
+    height: 190px;
+    display: flex;
+    position: absolute;
+    overflow: hidden;
+    align-items: center;
+    padding-top: 35px;
+    border-color: var(--dl-color-gray-black);
+    border-width: 1px;
+    padding-left: 35px;
+    border-radius: 50px;
+    padding-right: 35px;
+    padding-bottom: 35px;
+    justify-content: flex-start;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+  }
+  
